@@ -42,7 +42,7 @@ nav ul li a:hover {
     color: red;
 } */
 
-.detel {
+/* .detel {
     margin-left: 8%;
     margin-top: 9%;
 }
@@ -51,14 +51,14 @@ nav ul li a:hover {
     font-size: 50px;
     color: #212121;
     margin-bottom: 20px;
-}
+} */
 
 span {
     color: orange;
 
 }
 
-.detel p {
+/* .detel p {
     color: #555;
     line-height: 22px;
 }
@@ -72,7 +72,7 @@ span {
     display: inline-block;
     margin: 30px 0;
     border-radius: 5px;
-}
+} */
 
 .images {
     width: 45%;
@@ -101,7 +101,7 @@ span {
 
 .social {
     margin-left: 8%;
-    margin-top: 100px;
+    margin-top: 210px;
 }
 
 .social a {
@@ -123,6 +123,7 @@ span {
     width: 91%;
     margin: auto;
     padding: 20px;
+    margin-left: 4.4%;
     /* align-items: center; */
     /* justify-content: space-between; */
 
@@ -186,3 +187,66 @@ span {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* -------------------- */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background: #1e1e24;
+    align-items: center;
+    justify-content: center;
+}
+.btn-flip {
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.btn-flip:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+.btn-flip:hover:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+}
+.btn-flip:after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: #323237;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: #adadaf;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+}
+.btn-flip:before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: #adadaf;
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    transition: 0.5s;
+    position: relative;
+    background: #323237;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+}
+
