@@ -102,7 +102,7 @@ span {
 @media (min-width: 600px) {
     .images {
         width: 45%;
-        height: 80%;
+        height: 40%;
         position: absolute;
         bottom: 80px;
         right: 100px;
@@ -162,7 +162,7 @@ span {
 
 .jumbotron  {
     background: #eff4fd;
-    margin-left: -8%;
+    margin-left: -5%;
 }
 
 .navbar a {
