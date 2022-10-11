@@ -11,15 +11,23 @@
     justify-content: space-between;
 }
 
-/* @media (min-width: 600px) {
+@media (min-width: 600px) {
     body {
       flex-wrap: nowrap;
     }
 
     div {
-      flex-basis: 33%;
+      flex-basis: 100%;
     }
-} */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+    position: relative;
+}
 
 .hero {
     position: relative;
@@ -38,10 +46,10 @@
     justify-content: space-between;
 } */
 
-.logo {
+/* .logo {
     width: 100px;
     cursor: pointer;
-}
+} */
 
 /* nav ul li {
     display: inline-block;
@@ -96,7 +104,7 @@ span {
         width: 45%;
         height: 80%;
         position: absolute;
-        bottom: 35px;
+        bottom: 80px;
         right: 100px;
         flex-wrap: nowrap;
         flex-basis: 33%;
@@ -107,7 +115,7 @@ span {
     height: 100%;
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: 25%;
     transform: translateX(-50%);
     transition: bottom 1s, left 1s;
     flex-wrap: nowrap;
@@ -123,8 +131,9 @@ span {
 }
 
 .social {
-    margin-left: 8%;
+    margin-left: 50px;
     margin-top: 210px;
+    letter-spacing: 5px;
 }
 
 .social a {
@@ -143,13 +152,17 @@ span {
     overflow: hidden;
     /* background-color: #333; */
     display: flex;
-    width: 91%;
+    width: auto;
     margin: auto;
     padding: 20px;
-    margin-left: 4.4%;
+    /* margin-left: 0%; */
     /* align-items: center; */
     /* justify-content: space-between; */
+}
 
+.jumbotron  {
+    background: #eff4fd;
+    margin-left: -8%;
 }
 
 .navbar a {
@@ -235,8 +248,8 @@ body {
     text-decoration: none;
     font-family: 'Open Sans';
     text-transform: uppercase;
-    margin-left: 8%;
-    margin-top: 13%;
+    margin-left: 7%;
+    margin-top: 5%;
 }
 
 .btn-flip:hover:after {
